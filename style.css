@@ -1,0 +1,129 @@
+*{
+    box-sizing: border-box;
+    padding:0;
+    margin:0;
+}
+
+body{
+    width:100vw;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(rgb(86, 215, 238),rgb(130, 111, 236),
+   rgb(50,230,214));
+}
+
+button:hover{
+    cursor: pointer;
+    background-color: rgba(241, 13, 13, 0.938);
+    color:white;
+}
+
+.add-button{
+    width:10vh;
+}
+
+.add-button:hover{
+    background-color: rgba(79, 219, 23, 0.781);
+    transform: scale(1.2);
+}
+
+.container{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding:10px;
+}
+
+h1{
+    font-size: 3em;
+    color:rgb(238, 229, 229);
+    text-shadow: 5px 5px rgb(66, 92, 240);
+    text-decoration: underline;
+}
+
+.items-rem{
+    color:#fff;
+    margin:5px;
+}
+
+.todo-form{
+    margin:30px 0 10px;
+}
+
+.todo-input{
+    width:250px;
+    border:none;
+    border-radius: 5px;
+    padding:5px;
+    margin-right: 10px;
+    font-size: 1rem;
+}
+
+.add-button{
+    padding:5px;
+    font-size: 1.2rem;
+    border-radius: 5px;
+    border: none;
+}
+
+
+.todo-items{
+    min-width: 50vh;
+}
+
+.item{
+    background: rgb(167, 236, 248);
+    padding:10px;
+    font-size: 1.1rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px;
+}
+
+.item:first-child{
+  border-top-left-radius: 7px;
+  border-top-right-radius: 7px;
+}
+
+.item:last-child {
+    border-bottom-left-radius: 7px;
+    border-bottom-right-radius: 7px;
+}
+
+.item p{
+    text-align: center;
+    word-wrap: break-word;
+    width: 80%;
+    color:black;
+    border-radius: 5px;
+    padding:5px;
+}
+
+
+.delete-button{
+    padding:10px;
+    border-radius: 7px;
+    font-size: 1.2rem;
+    font-weight: 600;
+    border: none;
+}
+
+.checked :not(:last-child){
+    text-decoration: line-through;
+    color:rgb(52, 11, 238);
+}
+
+@media (max-width:464px){
+    .todo-form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .add-button{
+        margin:10px 0;
+    }
+}
